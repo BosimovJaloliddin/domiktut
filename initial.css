@@ -311,7 +311,7 @@ h1,
   /* container */
   .container {
     max-width: 1300px;
-    padding: 0 50px;
+    /* padding: 0 50px; */
   }
   /* h1 */
   h1 {
@@ -356,4 +356,31 @@ h1,
   .btn-long {
     width: 320px;
   }
+  /* -----------------------------Organize------------------------------------- */
+  .organize {
+    padding-top: 120px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .section_heading {
+    font-weight: 800;
+    font-size: 26px;
+  }
+  
+  .wraper {
+    margin-top: 80px;
+    gap: 40px;
+    display:flex;
+    flex-direction: column
+  }
+  .wrap_tapes{
+    display:flex;
+    flex-direction: column
+  }
+  
+ 
+ 
+  
+  /* -----------------------------------Organize end------------------------------------ */
 }
