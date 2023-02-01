@@ -81,9 +81,9 @@ article {
   top: 0%;
   left: 50%;
 }
-/* ------------------------popular-card-description end--------------------- */
+/* -----popular-card-description end---------------- */
 
-/* -----------------------------------Organize------------------------------------ */
+/* ---------Organize---------------------- */
 .organize {
   padding-top: 200px;
   position: relative;
@@ -102,7 +102,6 @@ article {
   right: 0;
   z-index: -1;
 }
-
 .section_heading {
   line-height: 150%;
 }
@@ -110,7 +109,6 @@ article {
   margin-top: 80px;
   gap: 40px;
 }
-
 .wrap_tapes {
   gap: 40px;
 }
@@ -173,5 +171,4 @@ article {
   line-height: 160%;
   color: #000000ab;
 }
-
 /* -----------------------------------Organize end------------------------------------ */
