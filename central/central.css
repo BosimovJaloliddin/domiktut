@@ -1,3 +1,6 @@
+/* ----------------article-section--------------------- */
+
+
 article {
     position: relative;
 
@@ -99,3 +102,5 @@ border-radius: 20px;
     top: 0%;
     left: 50%;
 }
+
+/* ------------------------end--------------------- */
