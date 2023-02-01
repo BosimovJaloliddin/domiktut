@@ -1,9 +1,9 @@
+
 /* ----------------article-section--------------------- */
 
 
 article {
     position: relative;
-
 }
 
 .about-wrap {
@@ -104,3 +104,96 @@ border-radius: 20px;
 }
 
 /* ------------------------end--------------------- */
+/* -----------------------------------Organize------------------------------------ */
+
+.organize {
+  padding-top: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.bg_img_section {
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 30.08%),
+    linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 34.1%),
+    linear-gradient(180deg, #ffffff 13.78%, rgba(255, 255, 255, 0) 59.27%),
+    url(../img/icons/bg\ services.png);
+  width: 1476px;
+  height: 1041px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.section_heading {
+  line-height: 150%;
+}
+.wraper {
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.wrap_tapes {
+  gap: 40px;
+}
+.tape_1 {
+  gap: 20px;
+  width: 33.33%;
+  background: #fff;
+  box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
+  border-radius: 20px;
+  padding: 30px 40px;
+  transition: 0.5s all;
+}
+.tape_1:hover {
+  transform: scale(1.01);
+}
+.tape_1_img {
+  width: 32px;
+  height: 28px;
+}
+.section_btn {
+  margin: 0 auto;
+  margin-top: 20px;
+  transition: 0.5s all;
+}
+.section_btn:hover {
+  background-color: #fff;
+  color: #f4683f;
+}
+.faq {
+  margin-top: 250px;
+}
+.faq_title {
+  margin-bottom: 80px;
+}
+.faq__questions {
+  border-top: 1px solid #c0c2d7;
+}
+.faq__item {
+  padding: 28px 20px 29px 0px;
+}
+.faq_logo {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.faq_logo:hover {
+  background: #eeeeee;
+  border-radius: 50%;
+  /* width: 25px; */
+  /* height: 25px; */
+}
+.question {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333333;
+}
+.question_p {
+  font-size: 12px;
+  line-height: 160%;
+  color: #000000ab;
+}
+
+/* -----------------------------------Organize end------------------------------------ */
