@@ -172,3 +172,61 @@ article {
   color: #000000ab;
 }
 /* -----------------------------------Organize end------------------------------------ */
+
+
+/* -----------------------------------Footer------------------------------------ */
+
+.footer_section {
+  background: linear-gradient(180deg, #161723 0%, #161723 109.24%);
+
+  margin-top: 270px;
+  padding: 85px 0px 75px 0px;
+}
+
+.footer_section_box_1 {
+  gap: 127px;
+}
+
+.footer_section_box_2 {
+  gap: 17px;
+}
+
+.footer_section_box_2_p {
+  gap: 15px;
+}
+.footer_section_box_3 {
+  gap: 150px;
+  margin-right: 50px
+}
+.footer_section_box_4 {
+  gap: 155px;
+}
+.footer_section_box_4_div_1 {
+  gap: 10px;
+}
+.footer_section_box_4_div_2 {
+  gap: 25px;
+}
+.f-c-a {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.f-c-a-p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #c0c2d7;
+}
+.f-c-a-p-p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404256;
+}
+
+
+/* -----------------------------------Footer End------------------------------------ */
