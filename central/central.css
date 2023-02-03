@@ -195,6 +195,11 @@ article {
   margin-top: 20px;
   margin-bottom: 60px;
 }
+.aplication-gradient {
+  position: relative;
+  background: linear-gradient(180deg, rgba(22, 23, 35, 0) 0%, #161723 81.42%);
+  height: 300px;
+}
 @media (max-width: 1400px) {
   .aplication-bg {
     width: 100%;
