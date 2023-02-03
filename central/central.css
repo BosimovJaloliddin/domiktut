@@ -173,6 +173,68 @@ article {
 }
 /* -----------------------------------Organize end------------------------------------ */
 
+/* section start */
+.block {
+  display: block;
+}
+.aplication-bg {
+  background: url(../img/images/footer-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 775px;
+}
+.aplication-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 240px;
+}
+.aplication-wrap p {
+  width: 360px;
+  height: 58px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+@media (max-width: 1400px) {
+  .aplication-bg {
+    width: 100%;
+  }
+  .aplication-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .aplication-wrap h4 {
+    letter-spacing: -1.5px;
+  }
+  .aplication-wrap p {
+    width: 310px;
+  }
+}
+@media (max-width: 360px) {
+  .aplication-bg {
+    width: 100%;
+  }
+  .aplication-wrap {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .aplication-bg {
+    background-position: center;
+    height: 600px;
+  }
+  .aplication-wrap h4 {
+    letter-spacing: -1px;
+  }
+  .aplication-wrap p {
+    font-size: 14px;
+    width: 254px;
+  }
+  .aplication-wrap button {
+    width: 220px;
+  }
+}
+/* section end */
+
 /* -----------------------------------Footer------------------------------------ */
 
 .footer_section {
