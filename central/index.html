@@ -11,6 +11,304 @@
 </head>
 
 <body>
+   <header class="header">
+
+      <!-- ###### NAV-LIGHT  ###### -->
+      <nav id="nav-light" class="nav-light flex-between bg-white">
+         <!-- || LOGO || -->
+         <div class="nav-light__inner flex-a-center gap-20">
+            <a href="#">
+               <img class="logo logo-dark" src="./img/logo/logo-dark.png" alt="">
+            </a>
+            <a href="#" class="nav-light__location flex-left med-d-n">
+               <img src="./img/icon/locator-orange.png" alt="">
+               <select class="fw-600 c-grey ch-orange">
+                  <option>Казань</option>
+                  <option>Москва</option>
+               </select>
+            </a>
+            <button class="nav-light__btn-сatalog c-orange bd-rad-20  med-d-n">Каталог</button>
+            <button class="nav-light__btn-compilation c-orange bd-rad-20  med-d-n">Быстрые подборки</button>
+         </div>
+         <!-- || LINK || -->
+         <div class="nav-light__inner flex-a-center gap-30  med-d-n">
+            <a class="nav__icon-mod c-grey ch-orange" href="#">Частые вопросы</a>
+            <a class="nav__icon-mod c-grey ch-orange" href="#">Сотрудничество</a>
+         </div>
+         <!-- || ICON || -->
+         <div class="nav-light__icon nav-light__inner flex-a-center gap-20">
+            <a class=" flex-a-center c-grey med-d-n" href="#"> <!-- icon favorite -->
+               <svg class="svg-favorite ch-orange">
+                  <use xlink:href="sprite.svg#heart"></use>
+               </svg>
+            </a>
+            <a class="nav-light__serch flex-a-center c-grey ch-orange" href="#"> <!-- icon search -->
+               <svg class="svg-serch">
+                  <use xlink:href="sprite.svg#serch"></use>
+               </svg>
+               <p class="nav__icon-mod med-d-n">Поиск по названию</p>
+            </a>
+            <a class="nav-light__call flex-a-center c-grey ch-orange" href="#"> <!-- icon call -->
+               <svg class="svg-call">
+                  <use xlink:href="sprite.svg#phone"></use>
+               </svg>
+            </a>
+            <a class="nav-light__burger flex-a-center c-grey ch-orange" href="#"> <!-- icon burger -->
+               <svg class="svg-burger">
+                  <use xlink:href="sprite.svg#burger"></use>
+               </svg>
+            </a>
+         </div>
+
+      </nav>
+
+      <!-- ###### NAV ###### -->
+      <nav id="nav" class="nav flex-between">
+         <!-- || LOGO || -->
+         <div class="flex-a-center gap-20">
+            <a href="#">
+               <img src="./img/logo/logo-light.png" alt="" class="logo logo-light">
+            </a>
+            <a href="#" class="nav__location location flex-left  med-d-n">
+               <img src="./img/icon/locator-orange.png" alt="">
+               <select class="fw-600 c-white ch-orange">
+                  <option>Казань</option>
+                  <option>Москва</option>
+               </select>
+            </a>
+            <button class="nav__btn btn-white c-white  med-d-n">Каталог</button>
+         </div>
+         <!-- || LINK || -->
+         <div class="nav__link flex-a-center gap-30  med-d-n">
+            <a class="c-white ch-orange" href="#">Частые вопросы</a>
+            <a class="c-white ch-orange" href="#">Сотрудничество</a>
+         </div>
+         <!-- || ICON || -->
+         <div class="nav__icon flex-a-center gap-20">
+            <a class=" flex-a-center c-white med-d-n" href="#"> <!-- icon favorite -->
+               <svg class="svg-favorite ch-orange">
+                  <use xlink:href="sprite.svg#heart"></use>
+               </svg>
+            </a>
+            <div class="nav__serch"> <!-- icon search -->
+               <form class="nav__serch-form flex-center gap-20 card-default">
+                  <div class="window-bg serch-close">
+                  </div>
+                  <svg class="dn-778 svg-serch c-grey">
+                     <use xlink:href="sprite.svg#serch"></use>
+                  </svg>
+                  <input class="serch-active__input" type="search" placeholder="Введите название дома">
+                  <button class="serch-active__btn-p btn-long">Найти</button>
+                  <button class="serch-active__btn-loop btn-long">
+                     <svg class="svg-serch c-white">
+                        <use xlink:href="sprite.svg#serch"></use>
+                     </svg>
+                  </button>
+               </form>
+               <button id="serch__svg-serch" class="serch-open flex-a-center c-white ch-orange">
+                  <svg class="svg-serch">
+                     <use xlink:href="sprite.svg#serch"></use>
+                  </svg>
+                  <p class="nav__icon-mod med-d-n">Поиск по названию</p>
+               </button>
+               <button id="serch__svg-x" class="serch-close flex-a-center c-orange ch-orange">
+                  <svg class="svg-x">
+                     <use xlink:href="sprite.svg#x"></use>
+                  </svg>
+                  <p class="nav__icon-mod med-d-n">Поиск по названию</p>
+               </button>
+            </div>
+            <a id="phone__svg-phone" class="phone-open flex-a-center c-white ch-orange" href="#"> <!-- icon call -->
+               <svg class="svg-phone">
+                  <use xlink:href="sprite.svg#phone"></use>
+               </svg>
+               <p class="nav__icon-mod med-d-n">8 (843) 528-65-48</p>
+            </a>
+            <a id="phone__svg-x" class="phone-close flex-a-center c-white ch-orange" href="#"> <!-- icon call -->
+               <svg class="svg-x">
+                  <use xlink:href="sprite.svg#x"></use>
+               </svg>
+               <p class="nav__icon-mod med-d-n">8 (843) 528-65-48</p>
+            </a>
+            <div class="phone">
+               <div class="phone__box flex-between flex-column">
+                  <a class="phone__btn burger__btn w-100 bd-rad-20 c-grey flex-center"
+                     href="8 (843) 528-65-48">Позвонить</a>
+                  <a class="phone__btn burger__btn w-100 bd-rad-20 c-grey flex-center" href="#">Написать в Telegram</a>
+                  <a class="phone__btn burger__btn w-100 bd-rad-20 c-grey flex-center" href="#">Написать в What's
+                     App</a>
+                  <button class="phone__btn  burger__btn w-100 bd-rad-20 c-grey">Заявка на подбор</button>
+               </div>
+            </div>
+            <button class="nav__burger burger-open flex-a-center c-white ch-orange" href="#"> <!-- icon burger -->
+               <svg class="svg-burger">
+                  <use xlink:href="sprite.svg#burger"></use>
+               </svg>
+            </button>
+         </div>
+      </nav>
+
+      <!-- ###### SEARCH ###### -->
+
+      <!-- ###### BURGER ###### -->
+
+      <div class="burger flex-between flex-column">
+
+         <!-- || LOGO || -->
+         <div class="flex-a-center flex-between w-100">
+            <a href="#">
+               <img src="./img/logo/logo-light.png" alt="" class="logo logo-light">
+            </a>
+            <button class="burger-close flex-a-center c-white ch-orange" href="#"> <!-- icon burger -->
+               <svg class="svg-x">
+                  <use xlink:href="sprite.svg#x"></use>
+               </svg>
+            </button>
+         </div>
+
+         <!-- || BURGER base || -->
+         <div class="burger__base flex-between flex-column w-100">
+            <!-- location -->
+            <a href="#" class="burger__location location">
+               <img src="./img/icon/locator-orange.png" alt="">
+               <select class="fw-600 c-white ch-orange">
+                  <option>Казань</option>
+                  <option>Москва</option>
+               </select>
+            </a>
+            <button class="burger__btn w-100 bd-rad-20 c-white">Информация для юр. лиц</button>
+            <button class="burger__btn w-100 bd-rad-20 c-white">Заявка на выездное обслуживание</button>
+            <button class="burger__btn w-100 bd-rad-20 c-white">Заявка на подбор</button>
+            <!-- link -->
+            <div class="burger__link flex-column gap-20">
+               <a class="c-white ch-orange" href="#">Частые вопросы</a>
+               <a class="c-white ch-orange" href="#">Сотрудничество</a>
+            </div>
+         </div>
+
+         <!-- || SOCIAL LINK || -->
+         <div class="flex-a-center flex-column gap-20">
+            <a class="flex-a-center c-white ch-orange" href="#">
+               <!-- icon call -->
+               <svg class="svg-call">
+                  <use xlink:href="sprite.svg#phone"></use>
+               </svg>
+               <p class="">8 (843) 528-65-48</p>
+            </a>
+            <div class="burger__social social flex">
+               <a href="#"> <!-- youtube -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#youtube"></use>
+                  </svg>
+               </a>
+               <a href="#"> <!-- instagram -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#instagram"></use>
+                  </svg>
+               </a>
+               <a href="#"> <!-- vk -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#vk"></use>
+                  </svg>
+               </a>
+               <a href="#"> <!-- whatsapp -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#whatsapp"></use>
+                  </svg>
+               </a>
+               <a href="#"> <!-- telegram -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#telegram"></use>
+                  </svg>
+               </a>
+            </div>
+         </div>
+
+      </div>
+
+      <!-- ###### INTRO ###### -->
+      <div class="intro flex container">
+
+         <!-- || MIX || -->
+         <div class="intro__mix flex-between flex-align-start flex-column c-white w-50 med-w-100">
+            <!-- TEXT -->
+            <div class="intro__text flex-between flex-column">
+               <h1>Аренда коттеджей и домов в Казани</h1>
+               <p class="intro__subtitle">Найдите идеальный вариант сами или предоставьте это нам</p>
+               <p class="intro__subtitle-phone">Давайте вам что-нибудь подберём</p>
+               <button class="intro__btn btn-long">Заявка на подбор</button>
+            </div>
+            <!-- SLIDER -->
+            <div class="intro__collection flex gap-40">
+               <a href="#" class="describe text-center c-white"><img class="intro__choice"
+                     src="./img/slider/slider-1.png" alt="">С бассейном</a>
+               <a href="#" class="describe text-center c-white"><img class="intro__choice"
+                     src="./img/slider/slider-2.png" alt="">Семейные и уютные</a>
+               <a href="#" class="describe text-center c-white"><img class="intro__choice"
+                     src="./img/slider/slider-3.png" alt="">Хиты продаж</a>
+               <a href="#" class="describe text-center c-white"><img class="intro__choice"
+                     src="./img/slider/slider-4.png" alt="">Под свадьбы и корпоративы</a>
+               <a href="#" class="describe text-center c-white"><img class="intro__choice"
+                     src="./img/slider/slider-5.png" alt="">С русской баней на дровах</a>
+            </div>
+            <!-- SOCIAL LINK -->
+            <div class="intro__social social flex">
+               <a href="#"> <!-- youtube -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#youtube"></use>
+                  </svg>
+               </a>
+               <a href="#"> <!-- instagram -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#instagram"></use>
+                  </svg>
+               </a>
+               <a href="#"> <!-- vk -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#vk"></use>
+                  </svg>
+               </a>
+               <a href="#"> <!-- whatsapp -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#whatsapp"></use>
+                  </svg>
+               </a>
+               <a href="#"> <!-- telegram -->
+                  <svg class="social__icon">
+                     <use xlink:href="sprite.svg#telegram"></use>
+                  </svg>
+               </a>
+            </div>
+         </div>
+
+         <!-- || FORM || -->
+         <div class="intro__blank med-d-n w-50 flex-center">
+            <form class="intro__form flex-between flex-column  card-default">
+               <div class="intro__block">
+                  <div class="flex">
+                     <label class="fx-1">Въезд</label>
+                     <label class="fx-1">Отъезд</label>
+                  </div>
+                  <div class="form__entry flex btn-white">
+                     <input class="form__num w-50 bg-none bd-right" type="number" name="number" id="number"
+                        placeholder="От">
+                     <input class="form__num w-50 bg-none" type="number" name="number" id="number" placeholder="До">
+                  </div>
+               </div>
+               <div class="intro__block">
+                  <label>Количество человек</label>
+                  <input class="form__num form__entry btn-white w-100" type="number" name="number" id="number"
+                     value="12">
+               </div>
+               <input class="" name="range" type="range" min="10000" max="150000" value="13000" />
+               <button class="btn-long">Найти</button>
+            </form>
+         </div>
+
+      </div>
+
+   </header>
+
   <article>
     <div class="container">
       <div class="about-wrap">
@@ -457,6 +755,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 
 </body>
 
