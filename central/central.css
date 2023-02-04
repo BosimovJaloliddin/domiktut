@@ -1,5 +1,89 @@
-/* -----------------------------------Organize------------------------------------ */
+/* ----------------article-section--------------------- */
+article {
+  position: relative;
+}
 
+.about-wrap {
+  padding-top: 200px;
+}
+
+.about-card-text {
+  margin-top: 25px;
+}
+
+.about-card {
+  margin-top: 75px;
+  gap: 90px;
+}
+
+/* ------------popular-card-description-------------- */
+.popular-grand-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+.popular-cards-wrap {
+  margin-top: 225px;
+}
+.popular-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 80px;
+}
+.popular-card {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
+  border-radius: 20px;
+}
+.popular-residents {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 150px;
+  width: 92px;
+  height: 36px;
+}
+.icon-favorite-div {
+  position: absolute;
+  right: 5%;
+  top: 38%;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 20px rgba(21, 22, 34, 0.2);
+  border-radius: 200px;
+}
+.novaya-osnovka-description {
+  margin: 30px;
+}
+.novaya-osnovka {
+  margin-top: 30px;
+}
+.popular-card-description {
+  margin-top: 20px;
+  gap: 10px;
+}
+.popular-description-inner {
+  gap: 12px;
+}
+.popular-card-price {
+  margin-top: 30px;
+}
+.go-to-the-catalog {
+  padding-top: 80px;
+}
+.about-background {
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+}
+/* -----popular-card-description end---------------- */
+
+/* ---------Organize---------------------- */
 .organize {
   padding-top: 200px;
   position: relative;
@@ -18,7 +102,6 @@
   right: 0;
   z-index: -1;
 }
-
 .section_heading {
   line-height: 150%;
 }
@@ -26,7 +109,6 @@
   margin-top: 80px;
   gap: 40px;
 }
-
 .wrap_tapes {
   gap: 40px;
 }
@@ -89,7 +171,6 @@
   line-height: 160%;
   color: #000000ab;
 }
-
 /* -----------------------------------Organize end------------------------------------ */
 
 
