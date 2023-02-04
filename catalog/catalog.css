@@ -1,0 +1,178 @@
+/* catalog style */
+.hidden {
+  visibility: hidden;
+}
+.catalog-navbar {
+  padding-top: 7rem;
+}
+.catalog-items {
+  vertical-align: middle;
+}
+.catalog-item {
+  padding: 10px 14px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #c0c2d7;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.catalog-item a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+.catalog-item_two p {
+  transform: rotate(90deg);
+  padding: 0 1rem;
+}
+.catalog-wrap {
+  margin-top: 32px;
+}
+
+.catalog-house_del a {
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: #727488;
+}
+.catalog-house_del {
+  margin: 0 auto;
+  position: relative;
+  left: -10rem;
+}
+.catalog-house {
+  background: #ffffff;
+  box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+.catalog-house_image {
+  position: relative;
+}
+.catalog-house_image1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.catalog-house_image2 {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+.catalog-house_image3 {
+  position: absolute;
+  left: 1rem;
+  top: 8rem;
+  cursor: pointer;
+  transition: 2s;
+}
+.catalog-house_image4 {
+  position: absolute;
+  right: 1rem;
+  top: 8rem;
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: 2s;
+}
+
+.catalog-house_image5 {
+  position: absolute;
+  left: 8rem;
+  bottom: 2rem;
+  cursor: pointer;
+}
+.catalog-house_title {
+  margin: 20px 26px;
+}
+.catalog-house_title h6 {
+  width: 347px;
+}
+.catalog-house_title p {
+  background: #ffffff;
+  border: 1px solid #c0c2d7;
+  border-radius: 150px;
+  padding: 7px 7px;
+}
+.catalog-house_salarys {
+  margin: 0 26px;
+}
+.catalog-house_meniu {
+  margin-bottom: 4px;
+}
+.catalog-house_meniu img {
+  width: 23px;
+  height: 17px;
+}
+.catalog-house_meniu a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 8px;
+  color: #727488;
+}
+.catalog-house_money > div {
+  margin-bottom: 20px;
+}
+.catalog-house_money_text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #727488;
+}
+.catalog-house_money_value {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333333;
+}
+.catalog-house_money1 {
+  position: relative;
+  left: 1rem;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+.catalog-house_gpa {
+  justify-content: flex-end;
+  padding: 10px 26px;
+}
+.catalog-house_gpa1 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #727488;
+  transition: 1s;
+}
+.catalog-house_gpa2 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #727488;
+  transition: 0.5s;
+}
+.catalog-line {
+  position: relative;
+}
+.catalog-line_81 {
+  position: absolute;
+  left: -2px;
+  top: 1rem;
+}
+.catalog-location {
+  position: relative;
+}
+.catalog-location .catalog-house {
+  position: absolute;
+  bottom: 22rem;
+  left: 1rem;
+}
+.catalog-house_image3:hover,
+.catalog-house_image4:hover {
+  background: white;
+  border-radius: 50px;
+}
+.catalog-house_gpa1:hover,
+.catalog-house_gpa2:hover {
+  color: #f4683f;
+}
+/* catalog style */
