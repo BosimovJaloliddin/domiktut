@@ -342,7 +342,6 @@ article {
 .organize {
    padding-top: 200px;
    position: relative;
-   cursor: pointer;
 }
 .bg_img_section {
    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 30.08%),
@@ -388,12 +387,9 @@ article {
    margin-top: 20px;
    transition: 0.5s all;
 }
-.section_btn:hover {
-   background-color: #fff;
-   color: #f4683f;
-}
+
 .faq {
-   margin-top: 250px;
+   margin: 250px 0;
 }
 .faq_title {
    margin-bottom: 80px;
