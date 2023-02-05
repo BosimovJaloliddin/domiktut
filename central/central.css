@@ -52,6 +52,7 @@
    left: 0;
    z-index: 100;
    padding: 20px 60px;
+   border-bottom: 1px solid #909090;
    -webkit-animation: nav-scroll-revers 0.5s linear forwards;
    animation: nav-scroll-revers 0.5s linear forwards;
 }
