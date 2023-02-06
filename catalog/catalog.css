@@ -19,7 +19,6 @@
   border: 1px solid #c0c2d7;
   border-radius: 200px;
   cursor: pointer;
-  overflow: hidden;
 }
 .catalog-item a {
   font-weight: 600;
