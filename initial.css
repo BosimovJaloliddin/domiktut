@@ -364,6 +364,10 @@ h1,
     cursor: pointer;
   }
   
+  .wrap_tapes{
+    width: 950px;
+  }
+
   .section_heading {
     font-weight: 800;
     font-size: 26px;
@@ -380,9 +384,22 @@ h1,
     flex-direction: column
   }
   
- 
- 
-  
-  /* -----------------------------------Organize end------------------------------------ */
+   /* -----------------------------------Organize end------------------------------------ */
+
+   /* ---------------------------Footer------------------------------- */
+   .footer_section_inner{
+    flex-direction: column;
+    gap: 50px
+   }
+   .footer_section_box_4_div_1{
+    justify-content: left;
+   }
+   .f-c-a-p-p,
+   .pppppp{
+    display: none
+   }
+   .footer_section_box_3{
+     gap: 0px
+   }
 }
 
