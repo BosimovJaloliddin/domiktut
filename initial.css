@@ -356,4 +356,33 @@ h1,
   .btn-long {
     width: 320px;
   }
+  /* ----------house-page------------------- */
+  .first_box_heading {
+    flex-direction: column;
+  }
+  .first_box_heading h2 {
+    font-size: 20px;
+  }
+  .first_box_heading p {
+    font-size: 14px;
+  }
+  .icon_first_box {
+    display: none;
+  }
+  .left_box_wrap1 img {
+    width: 360px;
+    height: 258px;
+    border-radius:10px;
+  }
+  .right_second_box,
+  .left_box_wrap1_inner_postion,
+  .third_box_left {
+    display: none;
+  }
+  .third_box_right{
+     border:none;
+     background: transparent;
+     box-shadow: none;
+     border-radius:0px;
+  }
 }
