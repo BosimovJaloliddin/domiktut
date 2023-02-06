@@ -87,7 +87,7 @@ body {
 }
 /*   CONTAINER STRUCTURE========================== */
 .container {
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 /*   WIDTH STRUCTURE========================== */
@@ -353,20 +353,22 @@ h1,
   .first-img {
     display: none;
   }
-  .podrobnee_p{
-    display: inline;
-    margin:15px;
-  }
-  .podrobnee-cost
-  { display:block;
-
-    }
-
-    .fav-360 ,
-    .h3-360{
-      display: none;
-  }
   
+  .podrobnee_p {
+    display: inline;
+    margin: 15px;
+  }
+  .podrobnee-cost {
+    display: block;
+  }
+
+  .fav-360,
+  .h3-360 {
+    display: none;
+  }
+
+  /* -------saved-house------- */
+
   .s-h-1400 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -394,6 +396,13 @@ h1,
   /* btn-long */
   .btn-long {
     width: 320px;
+  }
+
+  .none1 {
+    display: block;
+  }
+  .none {
+    display: none;
   }
 
   /* ---------favorite-sec--------- */
@@ -476,4 +485,4 @@ font-size: 16px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
-}
+  
