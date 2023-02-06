@@ -2,8 +2,13 @@
 .hidden {
   visibility: hidden;
 }
+.none1 {
+  display: none;
+}
+
 .catalog-navbar {
-  padding-top: 7rem;
+  padding-top: 3rem;
+  width: 1880px;
 }
 .catalog-items {
   vertical-align: middle;
@@ -42,6 +47,8 @@
   left: -10rem;
 }
 .catalog-house {
+  position: relative;
+  width: 880px;
   background: #ffffff;
   box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
   border-radius: 20px;
@@ -49,6 +56,10 @@
 }
 .catalog-house_image {
   position: relative;
+}
+.catalog-house_image-relative {
+  position: relative;
+  right: 1rem;
 }
 .catalog-house_image1 {
   position: absolute;
@@ -163,8 +174,84 @@
 }
 .catalog-location .catalog-house {
   position: absolute;
-  bottom: 22rem;
+  width: 840px;
+  bottom: 43rem;
   left: 1rem;
+}
+.catalog-location_icon1 {
+  position: absolute;
+  top: 4rem;
+  left: 32rem;
+}
+.catalog-location_icon2 {
+  position: absolute;
+  top: 17rem;
+  left: 40rem;
+}
+.catalog-location_icon3 {
+  position: absolute;
+  top: 4rem;
+  left: 17rem;
+}
+.catalog-location_icon4 {
+  position: absolute;
+  top: 10rem;
+  left: 12rem;
+}
+.catalog-location_icon5 {
+  position: absolute;
+  top: 22rem;
+  left: 6rem;
+}
+.catalog-location_icon6 {
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
+}
+.catalog-location_icon7 {
+  position: absolute;
+  top: 18rem;
+  left: 20rem;
+}
+.catalog-location_icon8 {
+  position: absolute;
+  top: 24rem;
+  left: 30rem;
+}
+.catalog-location_icon9 {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background: #ffffff;
+}
+.catalog-location_icon10 {
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background: #ffffff;
+}
+.catalog-location_icon11 {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background: #ffffff;
+  transform: rotate(90deg);
+}
+.catalog-house_meniu1 a,
+.catalog-house_meniu2 a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  padding-left: 7px;
 }
 .catalog-house_image3:hover,
 .catalog-house_image4:hover {
@@ -176,3 +263,67 @@
   color: #f4683f;
 }
 /* catalog style */
+
+@media (max-width: 1400px) {
+  .catalog-item_nine a {
+    display: none;
+  }
+  .catalog-house {
+    width: 840px;
+  }
+  .catalog-location .catalog-house {
+    position: absolute;
+    left: 1rem;
+    bottom: 45rem;
+  }
+}
+@media (max-width: 360px) {
+  .catalog-navbar {
+    max-width: 360px;
+  }
+  .catalog-item {
+    width: 132px;
+    height: 40px;
+    border: 1px solid #c0c2d7;
+  }
+  .catalog-item_nine a {
+    display: block;
+  }
+  .catalog-item_eight button {
+    width: 178px;
+    height: 40px;
+  }
+  .catalog-house {
+    max-width: 320px;
+    flex-direction: column;
+  }
+  .catalog-house_image2 {
+    top: 13rem;
+  }
+  .catalog-house_title {
+    margin: 0;
+  }
+  .catalog-house_title h6 {
+    width: 300px;
+  }
+  .catalog-house_title p {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .catalog-house_image-relative {
+    left: 0;
+    top: 0;
+  }
+  .catalog-house_gpa span {
+    font-weight: 800;
+    font-size: 16px;
+    color: #333333;
+  }
+  .catalog-house_gpa2 {
+    padding: 4px 18px;
+    background: #ffffff;
+    border: 1px solid #c0c2d7;
+    border-radius: 200px;
+  }
+}

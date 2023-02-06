@@ -356,4 +356,10 @@ h1,
   .btn-long {
     width: 320px;
   }
+  .none1 {
+    display: block;
+  }
+  .none {
+    display: none;
+  }
 }
