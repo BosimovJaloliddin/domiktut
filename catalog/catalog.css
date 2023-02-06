@@ -8,7 +8,6 @@
 
 .catalog-navbar {
   padding-top: 3rem;
-  width: 1880px;
 }
 .catalog-items {
   vertical-align: middle;
@@ -20,6 +19,7 @@
   border: 1px solid #c0c2d7;
   border-radius: 200px;
   cursor: pointer;
+  overflow: hidden;
 }
 .catalog-item a {
   font-weight: 600;
@@ -33,6 +33,7 @@
 }
 .catalog-wrap {
   margin-top: 32px;
+  overflow: hidden;
 }
 
 .catalog-house_del a {
@@ -48,7 +49,6 @@
 }
 .catalog-house {
   position: relative;
-  width: 880px;
   background: #ffffff;
   box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
   border-radius: 20px;
@@ -56,6 +56,11 @@
 }
 .catalog-house_image {
   position: relative;
+  overflow: hidden;
+}
+.catalog-house_relative1 {
+  position: relative;
+  left: -2rem;
 }
 .catalog-house_image-relative {
   position: relative;
@@ -98,9 +103,7 @@
 .catalog-house_title {
   margin: 20px 26px;
 }
-.catalog-house_title h6 {
-  width: 347px;
-}
+
 .catalog-house_title p {
   background: #ffffff;
   border: 1px solid #c0c2d7;
