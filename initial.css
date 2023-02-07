@@ -389,17 +389,22 @@ h1,
    /* ---------------------------Footer------------------------------- */
    .footer_section_inner{
     flex-direction: column;
-    gap: 50px
+    gap: 50px;
    }
    .footer_section_box_4_div_1{
     justify-content: left;
    }
    .f-c-a-p-p,
+   .f-cc-a-p,
+
    .pppppp{
     display: none
    }
    .footer_section_box_3{
-     gap: 0px
+            gap: 0px  
+   }
+   .footer_section_box_4{
+    margin: 0px;
+    gap: 20px
    }
 }
-
