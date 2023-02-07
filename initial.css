@@ -71,7 +71,9 @@ li {
 img {
   vertical-align: top;
 }
-
+svg {
+  fill: #fff;
+}
 svg:not(:root) {
   width: 29px;
   height: 25px;
@@ -84,6 +86,10 @@ body {
   line-height: 1.5;
   color: #333;
   font-family: "Montserrat", sans-serif;
+}
+
+a {
+  line-height: 1;
 }
 /*   CONTAINER STRUCTURE========================== */
 .container {
@@ -105,6 +111,7 @@ body {
 .flex-right,
 .flex-left,
 .flex-between,
+.flex-a-center,
 .flex-column,
 .hinders {
   display: flex;
@@ -114,6 +121,7 @@ body {
 .flex-right,
 .flex-left,
 .flex-between,
+.flex-a-center,
 .hinders {
   align-items: center;
 }
@@ -158,8 +166,24 @@ body {
   gap: 40px;
 }
 
+.gap-30 {
+  gap: 30px;
+}
+
 .gap-20 {
   gap: 20px;
+}
+
+/*  HOVER STRUCTURE========================= */
+.ch-orange,
+.ch-orange svg {
+  transition: 0.1s all;
+}
+
+.ch-orange:hover,
+.ch-orange:hover svg {
+  color: #f4683f;
+  fill: #f4683f;
 }
 
 /*   BUTTON STRUCTURE========================= */
@@ -256,11 +280,15 @@ h1,
 .c-black {
   color: #000;
 }
-.c-orange {
+.c-orange,
+.c-orange svg {
   color: #f4683f;
+  fill: #f4683f;
 }
-.c-grey {
+.c-grey,
+.c-grey svg {
   color: #333;
+  fill: #333;
 }
 
 .c-w-grey {
@@ -301,6 +329,8 @@ h1,
   fill: #f4683f;
   transform: scale(1.2);
 }
+
+
 /*   MEDIA STRUCTURE========================= */
 
 @media (max-width: 1400px) {
