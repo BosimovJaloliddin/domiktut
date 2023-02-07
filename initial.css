@@ -74,12 +74,9 @@ img {
 svg {
    fill: #fff;
 }
-<<<<<<< HEAD
-=======
 svg {
   fill: #fff;
 }
->>>>>>> 10e64012a41f08c3990e222fd8f19282c84da222
 svg:not(:root) {
    width: 29px;
    height: 25px;
@@ -103,17 +100,14 @@ a {
 }
 /*   CONTAINER STRUCTURE========================== */
 .container {
-<<<<<<< HEAD
    max-width: 1400px;
    margin: 0 auto;
-=======
-<<<<<<< HEAD
+
   max-width: 1920px;
-=======
+
   max-width: 1400px;
->>>>>>> cd45185fed961d8f2d981225a199970eaf0d6d71
+
   margin: 0 auto;
->>>>>>> 10e64012a41f08c3990e222fd8f19282c84da222
 }
 /*   WIDTH STRUCTURE========================== */
 .w-50 {
@@ -317,7 +311,7 @@ h1,
 }
 .c-orange,
 .c-orange svg {
-<<<<<<< HEAD
+
    color: #f4683f;
    fill: #f4683f;
 }
@@ -325,7 +319,7 @@ h1,
 .c-grey svg {
    color: #333;
    fill: #333;
-=======
+
   color: #f4683f;
   fill: #f4683f;
 }
@@ -333,7 +327,7 @@ h1,
 .c-grey svg {
   color: #333;
   fill: #333;
->>>>>>> 10e64012a41f08c3990e222fd8f19282c84da222
+
 }
 
 .c-w-grey {
@@ -409,7 +403,7 @@ h1,
 }
 
 @media (max-width: 360px) {
-<<<<<<< HEAD
+
    /* container */
    .container {
       max-width: 320px;
@@ -451,7 +445,6 @@ h1,
       display: flex;
       flex-direction: column;
    }
-=======
   /* container */
   .container {
     max-width: 320px;
@@ -472,8 +465,7 @@ h1,
   .btn-long {
     width: 320px;
   }
-<<<<<<< HEAD
-=======
+
   /* body */
   body {
     font-size: 14px;
@@ -571,6 +563,14 @@ h1,
   .none1 {
     display: block;
   }
+
+  
+  .wrap_tapes{
+    width: 950px;
+  }
+
+  .section_heading {
+
   .none {
     display: none;
   }
@@ -644,10 +644,35 @@ h1,
     font-size: 16px;
   }
 
+  
+   /* -----------------------------------Organize end------------------------------------ */
+
+   /* ---------------------------Footer------------------------------- */
+   .footer_section_inner{
+    flex-direction: column;
+    gap: 50px;
+   }
+   .footer_section_box_4_div_1{
+    justify-content: left;
+   }
+   .f-c-a-p-p,
+   .f-cc-a-p,
+
+   .pppppp{
+    display: none
+   }
+   .footer_section_box_3{
+            gap: 0px  
+   }
+   .footer_section_box_4{
+    margin: 0px;
+    gap: 20px
+   }
+
+
   .s-h-1400 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
->>>>>>> cd45185fed961d8f2d981225a199970eaf0d6d71
->>>>>>> 10e64012a41f08c3990e222fd8f19282c84da222
+
 }

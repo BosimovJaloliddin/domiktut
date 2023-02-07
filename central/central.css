@@ -824,10 +824,19 @@ article {
    gap: 155px;
 }
 .footer_section_box_4_div_1 {
+  gap: 10px;
+  cursor: pointer;
+
+}
+.footer_section_box_4_div_2 {
+  gap: 25px;
+  cursor: pointer;
+
    gap: 10px;
 }
 .footer_section_box_4_div_2 {
    gap: 25px;
+
 }
 .f-c-a {
    font-weight: 800;
@@ -835,12 +844,18 @@ article {
    line-height: 150%;
    color: #ffffff;
 }
+.f-c-a-p ,
+.f-cc-a-p{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
 .f-c-a-p {
    font-style: normal;
    font-weight: 600;
    font-size: 16px;
    line-height: 20px;
-
    color: #c0c2d7;
 }
 .f-c-a-p-p {
