@@ -93,11 +93,7 @@ a {
 }
 /*   CONTAINER STRUCTURE========================== */
 .container {
-<<<<<<< HEAD
   max-width: 1920px;
-=======
-  max-width: 1400px;
->>>>>>> cd45185fed961d8f2d981225a199970eaf0d6d71
   margin: 0 auto;
 }
 /*   WIDTH STRUCTURE========================== */
@@ -388,8 +384,6 @@ h1,
   .btn-long {
     width: 320px;
   }
-<<<<<<< HEAD
-=======
   /* body */
   body {
     font-size: 14px;
@@ -564,5 +558,4 @@ h1,
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
->>>>>>> cd45185fed961d8f2d981225a199970eaf0d6d71
 }
