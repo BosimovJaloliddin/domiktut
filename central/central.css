@@ -52,7 +52,7 @@
    left: 0;
    z-index: 100;
    padding: 20px 60px;
-   border-bottom: 1px solid #909090;
+   border-bottom: 1px solid #C0C2D7;
    -webkit-animation: nav-scroll-revers 0.5s linear forwards;
    animation: nav-scroll-revers 0.5s linear forwards;
 }
@@ -136,6 +136,11 @@
 .nav-light__btn-сatalog:hover {
    background: #f4683f;
    color: #fff;
+}
+
+.nav__icon-mod {
+   font-weight: 600;
+   font-size: 18px;
 }
 
 /* SEARCH */
@@ -253,6 +258,11 @@ input[type="range"]::-webkit-slider-thumb {
    display: none;
 }
 
+.mob-nav {
+   display: none;
+}
+
+
 /* ----------------article-section--------------------- */
 article {
    position: relative;
@@ -333,8 +343,8 @@ article {
 .about-background {
    z-index: -1;
    position: absolute;
-   top: 0%;
-   left: 50%;
+   top: 0;
+   right: 0;
 }
 /* -----popular-card-description end---------------- */
 
@@ -481,6 +491,10 @@ article {
    .location select {
       font-size: 16px;
    }
+   .nav__icon-mod {
+      font-size: 14px;
+   }
+
    /*Intro form*/
    .form__entry {
       height: 50px;
@@ -721,6 +735,19 @@ article {
       display: flex;
       font-size: 18px;
    }
+   /* MOBILE NAVIGATE ----- */
+   .mob-nav {
+      display: flex;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+      width: 100%;
+      padding: 8px 25px 12px;
+      background: #fff;
+      border-top: 1px solid #c0c2d7;
+      justify-content: space-around;
+   }
 }
 @media (max-width: 360px) {
    /*header*/
@@ -737,6 +764,16 @@ article {
       width: 170px;
       height: 22px;
    }
+
+   /*phone*/
+   .phone {
+      top: 0;
+      right: 0;
+   }
+   .phone__box {
+      right: 0;
+   }
+
    .aplication-bg {
       width: 100%;
    }

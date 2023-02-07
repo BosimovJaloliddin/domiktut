@@ -16,15 +16,6 @@ function scrollFunction() {
    }
 }
 
-// var btns = document.getElementsByClassName("burger-btn");
-// var par = document.getElementsByClassName("burger");
-// btns[0].onclick = function () {
-//    if (par[0].classList.contains("burger-active")) {
-//       par[0].classList.remove("burger-active");
-//    } else {
-//       par[0].classList.add("burger-active");
-//    }
-// };
 
 var burger_o = document.getElementsByClassName("burger-open");
 var burger_x = document.getElementsByClassName("burger-close");
@@ -35,16 +26,6 @@ burger_o[0].onclick = function () {
 burger_x[0].onclick = function () {
    bur[0].classList.remove("burger-active");
 };
-
-// var phone_o = document.getElementsByClassName("phone-open");
-// var phone_x = document.getElementsByClassName("phone-close");
-// var phone = document.getElementsByClassName("phone");
-// phone_o[0].onclick = function () {
-//    phone[0].classList.add("phone-active");
-// };
-// phone_x[0].onclick = function () {
-//    phone[0].classList.remove("phone-active");
-// };
 
 
 var search_o = document.getElementsByClassName("serch-open");
