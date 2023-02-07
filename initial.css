@@ -414,7 +414,6 @@ h1,
   .btn-long {
     width: 320px;
   }
-
   .organize {
     padding-top: 120px;
     position: relative;
@@ -435,26 +434,6 @@ h1,
     display: flex;
     flex-direction: column;
   }
-  /* container */
-  .container {
-    max-width: 320px;
-  }
-  /* h1 */
-  h1 {
-    font-size: 40px;
-  }
-  /* title */
-  .title {
-    font-size: 26px;
-  }
-  /* subtitle */
-  .subtitle {
-    font-size: 20px;
-  }
-  /* btn-long */
-  .btn-long {
-    width: 320px;
-  }
   /* body */
   body {
     font-size: 14px;
@@ -464,27 +443,6 @@ h1,
     max-width: 1300px;
     padding: 0 50px;
   }
-  /* h1 */
-  h1 {
-    font-size: 56px;
-  }
-  /* title */
-  .title {
-    font-size: 36px;
-  }
-  /* subtitle */
-  .subtitle {
-    font-size: 18px;
-  }
-  /* btn-long */
-  .btn-long {
-    font-size: 16px;
-  }
-  /* btn-white */
-  .btn-white {
-    height: 40px;
-  }
-
   /* -----------favorite-page---------- */
   .center-left {
     border-right: none;
@@ -526,29 +484,6 @@ h1,
     gap: 40px;
   }
 }
-
-@media (max-width: 360px) {
-  /* container */
-  .container {
-    max-width: 320px;
-  }
-  /* h1 */
-  h1 {
-    font-size: 40px;
-  }
-  /* title */
-  .title {
-    font-size: 26px;
-  }
-  /* subtitle */
-  .subtitle {
-    font-size: 20px;
-  }
-  /* btn-long */
-  .btn-long {
-    width: 320px;
-  }
-
   .none1 {
     display: block;
   }
