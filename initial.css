@@ -356,33 +356,107 @@ h1,
   .btn-long {
     width: 320px;
   }
+  /* -----------------about-card------------- */
+  .about-card {
+    display: grid;
+  }
+  .popular-cards-wrap {
+    margin-top: 95px;
+  }
 
+  .popular-grand-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .selection-cards-pack {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .selection-card-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .icon-favorite-div {
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 20px rgba(21, 22, 34, 0.2);
+    border-radius: 200px;
+  }
+
+  .popcard-heading {
+    margin-top: 100px;
+  }
+
+  .display-none360,
+  .popular-description-inner {
+    display: none;
+  }
+
+  .novaya-osnovka-description {
+padding: 0px;
+margin: 20px;
+margin-top: 10px;
+  }
+
+  .novaya-osnovka {
+    margin-top: 10px;
+  }
+
+  .popular-card-price {
+margin-top: 0px;
+  }
+
+  .display-none-1440 {
+    display: block;
+  }
+
+  .go-to-the-catalog {
+    padding: 0px;
+    margin-top: 50px;
+  }
+
+  .popular-card-price a {
+    border: 1px solid gray;
+    border-radius: 200px;
+    padding: 6px 26px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #333333;
+  }
+  /* ----------------about-card-end-------------- */
   /* -----------------------------Organize------------------------------------- */
   .organize {
     padding-top: 120px;
     position: relative;
     cursor: pointer;
   }
-  
+
   .section_heading {
     font-weight: 800;
     font-size: 26px;
   }
-  
+
   .wraper {
     margin-top: 80px;
     gap: 40px;
-    display:flex;
-    flex-direction: column
+    display: flex;
+    flex-direction: column;
   }
-  .wrap_tapes{
-    display:flex;
-    flex-direction: column
+  .wrap_tapes {
+    display: flex;
+    flex-direction: column;
   }
-  
- 
- 
-  
+
   /* -----------------------------------Organize end------------------------------------ */
 }
-
