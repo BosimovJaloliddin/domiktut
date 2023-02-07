@@ -1,3 +1,21 @@
+// Когда пользователь прокручивает вниз 50px от верхней части документа, измените размер шрифта заголовка
+window.onscroll = function () {
+   setInterval(scrollFunction, 200);
+};
+
+function scrollFunction() {
+   if (
+      document.body.scrollTop > 10 ||
+      document.documentElement.scrollTop > 10
+   ) {
+      document.getElementById("nav-light").classList.add("nav-scroll");
+      document.getElementById("nav").style.opacity = "0";
+   } else {
+      document.getElementById("nav-light").classList.remove("nav-scroll");
+      document.getElementById("nav").style.opacity = "1";
+   }
+}
+
 var burger_o = document.getElementsByClassName("burger-open");
 var burger_x = document.getElementsByClassName("burger-close");
 var bur = document.getElementsByClassName("burger");
