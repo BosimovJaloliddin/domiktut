@@ -572,29 +572,6 @@ margin-top: 0px;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-}
-@media (max-width: 360px) {
-  /* container */
-  .container {
-    max-width: 320px;
-  }
-  /* h1 */
-  h1 {
-    font-size: 40px;
-  }
-  /* title */
-  .title {
-    font-size: 26px;
-  }
-  /* subtitle */
-  .subtitle {
-    font-size: 20px;
-  }
-  /* btn-long */
-  .btn-long {
-    width: 320px;
-  }
-
   .none1 {
     display: block;
   }
