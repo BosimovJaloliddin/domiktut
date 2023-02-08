@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../initial.css">
+    <link rel="stylesheet" href="./catalog.css">
+    <title>catalog</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- ###### NAV ###### -->
+        <nav id="nav" class="nav flex-between">
+            <!-- || LOGO || -->
+            <div class="flex-a-center gap-20">
+                <a href="#">
+                    <img src="../img/logo/logo-dark.png" alt="" class="logo logo-light">
+                </a>
+                <a href="#" class="nav__location location flex-left  med-d-n">
+                    <img src="../img/icons/map-locator 1.png" alt="">
+                    <select class="fw-600 c-grey ch-orange">
+                        <option>Казань</option>
+                        <option>Москва</option>
+                    </select>
+                </a>
+                <button class="nav__btn btn-long med-d-n">Каталог</button>
+            </div>
+            <!-- || LINK || -->
+            <div class="nav__link flex-a-center gap-30  med-d-n">
+                <a class="c-grey ch-orange" href="#">Частые вопросы</a>
+                <a class="c-grey ch-orange" href="#">Сотрудничество</a>
+            </div>
+            <!-- || ICON || -->
+            <div class="nav__icon flex-a-center gap-20">
+                <a class="svg-favorite flex-a-center c-grey med-d-n" href="#">
+                    <!-- icon favorite -->
+                    <svg class=" ch-orange">
+                        <use xlink:href="sprite.svg#heart"></use>
+                    </svg>
+                </a>
+                <div class="nav__serch">
+                    <!-- icon search -->
+                    <form class="nav__serch-form flex-center gap-20 card-default">
+                        <div class="window-bg serch-close">
+                        </div>
+                        <svg class="dn-778 svg-serch c-grey">
+                            <use xlink:href="sprite.svg#serch"></use>
+                        </svg>
+                        <input class="serch-active__input" type="search" placeholder="Введите название дома">
+                        <button class="serch-active__btn-p btn-long">Найти</button>
+                        <button class="serch-active__btn-loop btn-long">
+                            <svg class="svg-serch c-white">
+                                <use xlink:href="sprite.svg#serch"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <button id="serch__svg-serch" class="serch-open flex-a-center c-grey ch-orange">
+                        <svg class="svg-serch">
+                            <use xlink:href="sprite.svg#serch"></use>
+                        </svg>
+                        <p class="nav__icon-mod med-d-n">Поиск по названию</p>
+                    </button>
+                    <button id="serch__svg-x" class="serch-close flex-a-center c-orange ch-orange">
+                        <svg class="svg-x">
+                            <use xlink:href="sprite.svg#x"></use>
+                        </svg>
+                        <p class="nav__icon-mod med-d-n">Поиск по названию</p>
+                    </button>
+                </div>
+                <a id="phone__svg-phone" class="phone-open flex-a-center c-grey ch-orange" href="#">
+                    <!-- icon call -->
+                    <svg class="svg-phone">
+                        <use xlink:href="sprite.svg#phone"></use>
+                    </svg>
+                    <p class="nav__icon-mod med-d-n">8 (843) 528-65-48</p>
+                </a>
+                <a id="phone__svg-x" class="phone-close flex-a-center c-grey ch-orange" href="#">
+                    <!-- icon call -->
+                    <svg class="svg-x">
+                        <use xlink:href="sprite.svg#x"></use>
+                    </svg>
+                    <p class="nav__icon-mod med-d-n">8 (843) 528-65-48</p>
+                </a>
+                <div class="phone">
+                    <div class="phone__box flex-between flex-column">
+                        <a class="phone__btn burger__btn w-100 bd-rad-20 c-white flex-center"
+                            href="8 (843) 528-65-48">Позвонить</a>
+                        <a class="phone__btn burger__btn w-100 bd-rad-20 c-white flex-center" href="#">Написать в
+                            Telegram</a>
+                        <a class="phone__btn burger__btn w-100 bd-rad-20 c-white flex-center" href="#">Написать в What's
+                            App</a>
+                        <button class="phone__btn  burger__btn w-100 bd-rad-20 c-white">Заявка на подбор</button>
+                    </div>
+                </div>
+                <button class="nav__burger burger-open flex-a-center c-grey ch-orange" href="#">
+                    <!-- icon burger -->
+                    <svg class="svg-burger">
+                        <use xlink:href="sprite.svg#burger"></use>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- ###### BURGER ###### -->
+
+        <div class="burger flex-between flex-column">
+
+            <!-- || LOGO || -->
+            <div class="flex-a-center flex-between w-100">
+                <a href="#">
+                    <img src="../img/logo/logo-light.png" alt="" class="logo logo-light">
+                </a>
+                <button class="burger-close flex-a-center c-white ch-orange" href="#">
+                    <!-- icon burger -->
+                    <svg class="svg-x">
+                        <use xlink:href="sprite.svg#x"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- || BURGER base || -->
+            <div class="burger__base flex-between flex-column w-100">
+                <!-- location -->
+                <a href="#" class="burger__location location">
+                    <img src="../img/icons/map-locator 1.png" alt="">
+                    <select class="fw-600 c-white ch-orange">
+                        <option>Казань</option>
+                        <option>Москва</option>
+                    </select>
+                </a>
+                <button class="burger__btn w-100 bd-rad-20 c-white">Информация для юр. лиц</button>
+                <button class="burger__btn w-100 bd-rad-20 c-white">Заявка на выездное обслуживание</button>
+                <button class="burger__btn w-100 bd-rad-20 c-white">Заявка на подбор</button>
+                <!-- link -->
+                <div class="burger__link flex-column gap-20">
+                    <a class="c-white ch-orange" href="#">Частые вопросы</a>
+                    <a class="c-white ch-orange" href="#">Сотрудничество</a>
+                </div>
+            </div>
+
+            <!-- || SOCIAL LINK || -->
+            <div class="flex-a-center flex-column gap-20">
+                <a class="flex-a-center c-white ch-orange" href="#">
+                    <!-- icon call -->
+                    <svg class="svg-call">
+                        <use xlink:href="sprite.svg#phone"></use>
+                    </svg>
+                    <p class="">8 (843) 528-65-48</p>
+                </a>
+                <div class="burger__social social flex">
+                    <a href="#">
+                        <!-- youtube -->
+                        <svg class="social__icon">
+                            <use xlink:href="sprite.svg#youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <!-- instagram -->
+                        <svg class="social__icon">
+                            <use xlink:href="sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <!-- vk -->
+                        <svg class="social__icon">
+                            <use xlink:href="sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <!-- whatsapp -->
+                        <svg class="social__icon">
+                            <use xlink:href="sprite.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <!-- telegram -->
+                        <svg class="social__icon">
+                            <use xlink:href="sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="catalog-navbar">
+            <div class="catalog-navbar_items flex flex-between">
+                <select class="catalog-navbar_item1">
+                    <option value="1">Цена</option>
+                </select>
+                <div class="catalog-navbar_item2">
+                    <input type="date" placeholder="22.22.22">
+                    <input class="catalog-navbar_input" type="text" placeholder="Отъезд">
+                    <p class="catalog-del">Сбросить</p>
+                </div>
+                <select class="catalog-navbar_item3">
+                    <option value="1">С бассейном</option>
+                </select>
+                <select class="catalog-navbar_item4">
+                    <option value="1">Развлечения</option>
+                </select>
+                <select class="catalog-navbar_item5">
+                    <option value="1">Спальни и спальные места</option>
+                </select>
+                <select class="catalog-navbar_item6">
+                    <option value="1">Подборки</option>
+                </select>
+                <div class="catalog-navbar_item7">
+                    <button class="c-white" type="button">Заявка на подбор</button>
+                </div>
+                <div class="catalog-navbar_item8">
+                    <img src="../img/icons/catalog-setting.png" alt="icon">
+                    <a href="#">Фильтр</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-house_wrap">
+            <div class="catalog-houses flex flex-column gap-40">
+                <div class="catalog-house">
+                    <div class="catalog-house_image">
+                        <img src="../img/images/img.png" alt="house">
+                    </div>
+                    <div class="catalog-house_title flex flex-between">
+                        <h4>Новая сосновка</h4>
+                        <span>A до 30</span>
+                        <div class="responsiv-catalog flex-a-center">
+                            <p>от 10 000 ₽</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="catalog-house_bar flex flex-column ">
+                        <div class="flex">
+                            <img src="../img/icons/icon_bed.png" alt="icon">
+                            <span>5 спальных мест</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/Vector 6 (Stroke).png" alt="icon">
+                            <span>Баня</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/icon_waterpool.png" alt="icon">
+                            <span>Бассейн</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/icon_entertainment.png" alt="icon">
+                            <span>Развлечения</span>
+                        </div>
+                    </div>
+                    <div class="catalog-house_line "></div>
+                    <div class="catalog-house_money flex flex-column flex-center gap-20">
+                        <div class="catalog-house_money1 flex flex-between gap-20">
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="catalog-house_money2 flex flex-between gap-20">
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-house_info flex flex-center flex-right gap-20">
+                        <a href="#">Показать на карте</a>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="catalog-house">
+                    <div class="catalog-house_image">
+                        <img src="../img/images/catalog-image4.png" alt="house">
+                    </div>
+                    <div class="catalog-house_title flex flex-between">
+                        <h4>Ярославско-Дмитровское <br> шоссе 4</h4>
+                        <span>A до 30</span>
+                        <div class="responsiv-catalog flex-a-center">
+                            <p>от 10 000 ₽</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="catalog-house_bar flex flex-column ">
+                        <div class="flex">
+                            <img src="../img/icons/icon_bed.png" alt="icon">
+                            <span>5 спальных мест</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/Vector 6 (Stroke).png" alt="icon">
+                            <span>Баня</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/icon_waterpool.png" alt="icon">
+                            <span>Бассейн</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/icon_entertainment.png" alt="icon">
+                            <span>Развлечения</span>
+                        </div>
+                    </div>
+                    <div class="catalog-house_money catalog-house_money3 flex">
+                        <span>от 12 480 ₽ / сутки</span>
+                    </div>
+                    <div class="catalog-house_info flex flex-center flex-right fw-600 gap-20">
+                        <a href="#">Показать на карте</a>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="catalog-house">
+                    <div class="catalog-house_image">
+                        <img src="../img/images/catalog-image9.png" alt="house">
+                    </div>
+                    <div class="catalog-house_title flex flex-between">
+                        <div>
+                            <h4>Горки-Сухаревские 1</h4>
+                            <p>Рублево-Успенское шоссе 24 км от МКАД
+                            <p>
+                        </div>
+                        <div class="responsiv-catalog flex-a-center">
+                            <p>от 10 000 ₽</p>
+                            <button>Подробнее</button>
+                        </div>
+                        <span>A до 30</span>
+                    </div>
+                    <div class="catalog-house_bar flex flex-column ">
+                        <div class="flex">
+                            <img src="../img/icons/icon_bed.png" alt="icon">
+                            <span>5 спальных мест</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/Vector 6 (Stroke).png" alt="icon">
+                            <span>Баня</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/icon_waterpool.png" alt="icon">
+                            <span>Бассейн</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/icon_entertainment.png" alt="icon">
+                            <span>Развлечения</span>
+                        </div>
+                    </div>
+                    <div class="catalog-house_line "></div>
+                    <div class="catalog-house_money flex flex-column flex-center gap-20">
+                        <div class="catalog-house_money1 flex flex-between gap-20">
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="catalog-house_money2 flex flex-between gap-20">
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-house_info flex flex-center flex-right gap-20">
+                        <a href="#">Показать на карте</a>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="catalog-house">
+                    <div class="catalog-house_image">
+                        <img src="../img/images/catalog-image10.png" alt="house">
+                    </div>
+                    <div class="catalog-house_title flex flex-between">
+                        <h4>Салмачи 1</h4>
+                        <span>A до 30</span>
+                        <div class="responsiv-catalog flex-a-center">
+                            <p>от 10 000 ₽</p>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="catalog-house_bar flex flex-column ">
+                        <div class="flex">
+                            <img src="../img/icons/icon_bed.png" alt="icon">
+                            <span>5 спальных мест</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/Vector 6 (Stroke).png" alt="icon">
+                            <span>Баня</span>
+                        </div>
+                        <div class="flex">
+                            <img src="../img/icons/icon_waterpool.png" alt="icon">
+                            <span>Бассейн</span>
+                        </div>
+                    </div>
+                    <div class="catalog-house_line "></div>
+                    <div class="catalog-house_money flex flex-column flex-center gap-20">
+                        <div class="catalog-house_money1 flex flex-between gap-20">
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="catalog-house_money2 flex flex-between gap-20">
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                            <div>
+                                <p>Будни</p>
+                                <span>от 8000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-house_info flex flex-center flex-right gap-20">
+                        <a href="#">Показать на карте</a>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-line">
+                <input type="range" min="1" max="100" value="10">
+            </div>
+            <div class="catalog-gpa">
+                <div class="catalog-house_gpa">
+                    <div class="catalog-gpa_image">
+                        <img src="../img/images/Rectangle 60.png" alt="house">
+                    </div>
+                    <div class="catalog-gpa_title flex flex-between">
+                        <div>
+                            <h4>Горки-Сухаревские 1</h4>
+                            <p>Рублево-Успенское шоссе 24 км от МКАД</p>
+                        </div>
+                        <span>A до 30</span>
+                    </div>
+                    <div class="catalog-gpa_bar flex ">
+                        <div class="flex flex-column">
+                            <div class="flex">
+                                <img src="../img/icons/icon_bed.png" alt="icon">
+                                <span>25 спальных мест</span>
+                            </div>
+                            <div class="flex">
+                                <img src="../img/icons/Vector 6 (Stroke).png" alt="icon">
+                                <span>Баня</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-column">
+                            <div class="flex">
+                                <img src="../img/icons/icon_waterpool.png" alt="icon">
+                                <span>Бассейн</span>
+                            </div>
+                            <div class="flex">
+                                <img src="../img/icons/icon_entertainment.png" alt="icon">
+                                <span>Развлечения</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-gpa_info flex flex-column">
+                        <a href="#">Подробнее</a>
+                        <span>от 12 480 ₽ / сутки</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
