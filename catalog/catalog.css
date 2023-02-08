@@ -125,6 +125,9 @@ input[type="range"]::-webkit-slider-thumb {
 .catalog-house_wrap {
   padding: 0 1rem;
 }
+.catalog-navbar_items {
+  gap: 10px;
+}
 .catalog-navbar_items > select,
 .catalog-navbar_item2,
 .catalog-navbar_item8 {
@@ -134,6 +137,12 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 7px 7px;
   height: 40px;
   cursor: pointer;
+  overflow: hidden;
+}
+.catalog-navbar_option {
+  background: #888;
+  font-size: 18px;
+  color: #ffffff;
 }
 .catalog-navbar_item2 {
   width: 260px;
@@ -151,6 +160,8 @@ input[type="range"]::-webkit-slider-thumb {
   background: #f4683f;
   border-radius: 200px;
   padding: 7px 10px;
+  cursor: pointer;
+  transition: all 1s;
 }
 .catalog-navbar_input {
   border-left: 2px solid #222;
@@ -160,6 +171,10 @@ input[type="range"]::-webkit-slider-thumb {
 .catalog-navbar_money {
   width: 93px;
   height: 40px;
+}
+
+.catalog-navbar_item7:hover {
+  box-shadow: 0 0 5px #333;
 }
 /* catalog navbar style */
 
@@ -175,7 +190,8 @@ input[type="range"]::-webkit-slider-thumb {
 .catalog-house {
   display: grid;
   grid-template-columns: repeat(22, 1fr);
-  grid-template-rows: 80px 150px 40px;
+  grid-template-rows: 70px 150px 40px;
+  max-width: 880px;
   background: #ffffff;
   box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
   border-radius: 20px;
@@ -185,10 +201,39 @@ input[type="range"]::-webkit-slider-thumb {
 .catalog-house_image {
   grid-column: 1 / span 7;
   grid-row: 1 / span 3;
+  position: relative;
 }
-.catalog-house_image img {
+.catalog-house_img {
   width: 100%;
   height: 100%;
+}
+.catalog-house_img1 {
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  transition: 1s;
+}
+.catalog-house_img2 {
+  position: absolute;
+  top: 7rem;
+  right: 1rem;
+  transform: rotate(180deg);
+  transition: 1s;
+}
+.catalog-house_img3 {
+  position: absolute;
+  bottom: 1rem;
+  left: 6rem;
+}
+.catalog-house_img4 {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.catalog-house_img5 {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 .catalog-house_title {
   grid-column: 8 / span 15;
@@ -270,18 +315,18 @@ input[type="range"]::-webkit-slider-thumb {
   transform: rotate(90deg);
   width: 20px;
   position: relative;
-  left: -33rem;
-  top: -37rem;
+  left: -35rem;
+  top: -35rem;
 }
 .catalog-line input {
-  width: 600px;
+  width: 900px;
 }
 .catalog-gpa {
   grid-column: 10 / span 6;
   background: url(../img/images/gpa.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 650px;
   position: relative;
 }
 .catalog-house_gpa {
@@ -368,6 +413,12 @@ input[type="range"]::-webkit-slider-thumb {
 .responsiv-catalog {
   display: none;
 }
+.catalog-house_img1:hover,
+.catalog-house_img2:hover,
+.catalog-house_img5:hover {
+  background: #ffffff;
+  border-radius: 100px;
+}
 .catalog-house_info a:hover {
   color: #f4683f;
 }
@@ -398,6 +449,30 @@ input[type="range"]::-webkit-slider-thumb {
   .form__entry {
     height: 50px;
   }
+  /* catalog style */
+  .catalog-house_img3 {
+    left: 4rem;
+  }
+  .catalog-house_money {
+    gap: 4px;
+  }
+  .catalog-house_money1,
+  .catalog-house_money2 {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .catalog-house_text {
+    display: flex;
+    gap: 10px;
+  }
+  .catalog-house4 {
+    display: none;
+  }
+  .catalog-line {
+    left: -24rem;
+    top: -26rem;
+  }
+  /* catalog style */
 }
 @media (max-width: 1250px) {
   /*nav*/
@@ -405,12 +480,16 @@ input[type="range"]::-webkit-slider-thumb {
   .nav__link {
     display: none;
   }
+  /* catalog style */
   .catalog-navbar_items select,
   .catalog-navbar_item2 {
     display: none;
   }
   .catalog-houses {
     grid-column: 1 / span 15;
+  }
+  .catalog-house_img3 {
+    left: 6rem;
   }
   .catalog-line {
     display: none;
@@ -419,6 +498,7 @@ input[type="range"]::-webkit-slider-thumb {
     grid-column: 1 / span 15;
     margin-top: 2rem;
   }
+  /* catalog style */
 }
 @media (max-width: 778px) {
   .dn-778 {
@@ -609,10 +689,15 @@ input[type="range"]::-webkit-slider-thumb {
     box-shadow: 0px 4px 80px rgba(5, 9, 22, 0.08);
     border-radius: 20px;
     padding-right: 0;
+    max-width: 400px;
+    margin-left: 10px;
   }
   .catalog-house_image {
     grid-column: 1 / span 22;
     grid-row: 1 / span 3;
+  }
+  .catalog-house_img3 {
+    left: 9rem;
   }
   .catalog-house_title {
     grid-column: 1 / span 22;
@@ -657,6 +742,9 @@ input[type="range"]::-webkit-slider-thumb {
   /* catalog style */
 }
 @media (max-width: 360px) {
+  .container {
+    padding: 0;
+  }
   /*logo*/
   .logo {
     width: 170px;
@@ -672,4 +760,5 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
+/* catalog style */
 /* catalog style */
