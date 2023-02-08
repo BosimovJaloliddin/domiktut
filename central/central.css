@@ -348,7 +348,11 @@ article {
 }
 /* -----popular-card-description end---------------- */
 
-/* ---------Organize---------------------- */
+.display-none-1440 {
+  display: none;
+}
+/* ------------------------end--------------------- */
+/* -----------------------------------Organize------------------------------------ */
 .organize {
    padding-top: 200px;
    position: relative;
