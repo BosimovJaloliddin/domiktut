@@ -51,7 +51,8 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 button {
   cursor: pointer;
@@ -74,6 +75,9 @@ img {
 svg {
   fill: #fff;
 }
+svg {
+  fill: #fff;
+}
 svg:not(:root) {
   width: 29px;
   height: 25px;
@@ -91,10 +95,13 @@ body {
 a {
   line-height: 1;
 }
-/*   CONTAINER STRUCTURE========================== */
+
+a {
+  line-height: 1;
+}
 .container {
-  max-width: 1400px;
   margin: 0 auto;
+  max-width: 1920px;
 }
 /*   WIDTH STRUCTURE========================== */
 .w-50 {
@@ -170,8 +177,24 @@ a {
   gap: 30px;
 }
 
+.gap-30 {
+  gap: 30px;
+}
+
 .gap-20 {
   gap: 20px;
+}
+
+/*  HOVER STRUCTURE========================= */
+.ch-orange,
+.ch-orange svg {
+  transition: 0.1s all;
+}
+
+.ch-orange:hover,
+.ch-orange:hover svg {
+  color: #f4683f;
+  fill: #f4683f;
 }
 
 /*  HOVER STRUCTURE========================= */
@@ -289,6 +312,13 @@ h1,
 .c-grey svg {
   color: #333;
   fill: #333;
+  color: #f4683f;
+  fill: #f4683f;
+}
+.c-grey,
+.c-grey svg {
+  color: #333;
+  fill: #333;
 }
 
 .c-w-grey {
@@ -384,6 +414,26 @@ h1,
   .btn-long {
     width: 320px;
   }
+  .organize {
+    padding-top: 120px;
+    position: relative;
+  }
+
+  .section_heading {
+    font-weight: 800;
+    font-size: 26px;
+  }
+
+  .wraper {
+    margin-top: 80px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap_tapes {
+    display: flex;
+    flex-direction: column;
+  }
   /* body */
   body {
     font-size: 14px;
@@ -393,27 +443,6 @@ h1,
     max-width: 1300px;
     padding: 0 50px;
   }
-  /* h1 */
-  h1 {
-    font-size: 56px;
-  }
-  /* title */
-  .title {
-    font-size: 36px;
-  }
-  /* subtitle */
-  .subtitle {
-    font-size: 18px;
-  }
-  /* btn-long */
-  .btn-long {
-    font-size: 16px;
-  }
-  /* btn-white */
-  .btn-white {
-    height: 40px;
-  }
-
   /* -----------favorite-page---------- */
   .center-left {
     border-right: none;
@@ -454,30 +483,6 @@ h1,
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-}
-
-@media (max-width: 360px) {
-  /* container */
-  .container {
-    max-width: 320px;
-  }
-  /* h1 */
-  h1 {
-    font-size: 40px;
-  }
-  /* title */
-  .title {
-    font-size: 26px;
-  }
-  /* subtitle */
-  .subtitle {
-    font-size: 20px;
-  }
-  /* btn-long */
-  .btn-long {
-    width: 320px;
-  }
-
   .none1 {
     display: block;
   }
